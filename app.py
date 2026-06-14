@@ -35,7 +35,7 @@ if st.button("Predict"):
 
     prediction = model.predict(input_data)[0]
 
-    if prediction == 0:
-        st.success("No CKD Detected")
-    else:
-        st.error("CKD Detected")
+   if creatinine > 1.5 or urea > 50 or egfr < 60:
+    st.error("CKD Risk Detected")
+else:
+    st.success("No CKD Risk Detected")
