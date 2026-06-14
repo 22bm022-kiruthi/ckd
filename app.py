@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load model
-model = joblib.load("ckd_model.pkl")
+model = joblib.load("ckd_model (4).pkl")
 
 st.title("Chronic Kidney Disease Prediction")
 
